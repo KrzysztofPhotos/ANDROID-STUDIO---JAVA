@@ -19,16 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    public void onBtnClick (View view) {
-//        TextView txtHello = findViewById(R.id.txtMessage);
-//        EditText plainText = findViewById(R.id.plainText);
-//        plainText.getText().toString();
-//        txtHello.setText("Hello " + plainText.getText().toString());
-//
-//
-//    }
-
-    public void onSubmitBtnClick (View view) {
+    public void submitBtnClicked (View view) {
         EditText firstName = findViewById(R.id.firstName);
 
         EditText lastName = findViewById(R.id.lastName);
