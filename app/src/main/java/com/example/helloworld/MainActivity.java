@@ -3,7 +3,9 @@ package com.example.helloworld;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +15,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //TODO: complete this
 
-        TextView txtHello = findViewById(R.id.txtMessage)
+        EditText plainText = findViewById(R.id.plainText);
+        plainText.getText().toString();
 
     }
+
+    public void onBtnClick (View view) {
+        TextView txtHello = findViewById(R.id.txtMessage);
+        txtHello.setText("Hello");
+    }
+
 }
