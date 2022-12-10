@@ -15,14 +15,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //TODO: complete this
 
-        EditText plainText = findViewById(R.id.plainText);
-        plainText.getText().toString();
+
 
     }
 
-    public void onBtnClick (View view) {
-        TextView txtHello = findViewById(R.id.txtMessage);
-        txtHello.setText("Hello");
-    }
+//    public void onBtnClick (View view) {
+//        TextView txtHello = findViewById(R.id.txtMessage);
+//        EditText plainText = findViewById(R.id.plainText);
+//        plainText.getText().toString();
+//        txtHello.setText("Hello " + plainText.getText().toString());
+//
+//
+//    }
 
+    public void onSubmitBtnClick (View view) {
+        EditText firstName = findViewById(R.id.firstName);
+
+        EditText lastName = findViewById(R.id.lastName);
+
+        EditText email = findViewById(R.id.email);
+
+
+        TextView outputFirstName = findViewById(R.id.outputFirstName);
+        TextView outputLastName = findViewById(R.id.outputLastName);
+        TextView outputEmail = findViewById(R.id.outputEmail);
+
+        outputFirstName.setText("First name: " + firstName.getText().toString());
+        outputLastName.setText("Last name: " + lastName.getText().toString());
+        outputEmail.setText("Email: " + email.getText().toString());
+    }
 }
